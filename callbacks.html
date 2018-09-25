@@ -5,16 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Assignment 2 callbacks</title>
+    <title>Callbacks</title>
 </head>
 
 <body>
     <script>
+        // initial function defination
         function prepareFood(tableNum, items, callback) {
             console.log('preparing food for items - ', items);
-            callback(tableNum, items);
+            callback(tableNum, items); //callback function
         }
-
+        
+        //callback function defination
         function serveFood(tableNum, items) {
             console.log('serving food for items - ', items);
 
@@ -22,8 +24,7 @@
 
         var tableNum = 100;
         var items = ["Burger", "pasta", "coke"];
-        prepareFood(tableNum, items, serveFood);
+        prepareFood(tableNum, items, serveFood); //initial function call
     </script>
 </body>
-
 </html>
